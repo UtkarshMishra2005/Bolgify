@@ -22,9 +22,8 @@ function Signup() {
                 navigate("/")
             }
         } catch (error) {
-            console.error(error.message)
             console.error(error)
-            setError("Nahi ho raha")
+            setError(error.message)
         }
     }
 
