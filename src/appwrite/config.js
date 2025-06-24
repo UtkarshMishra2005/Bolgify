@@ -129,7 +129,7 @@ export class Service{
              let a = this.bucket.getFilePreview(
                 conf.appwriteBucketId,
                 fileId
-            ).href
+            ).href.replace("preview", "view")
             console.log(a)
             return a
         } catch (error) {
